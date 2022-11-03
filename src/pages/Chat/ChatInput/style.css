@@ -1,0 +1,79 @@
+.chat_input_wrapper {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: calc(100% - 1px);
+  position: relative;
+  border-top: 1px solid #E6E5E8;
+  border-right: 1px solid #E6E5E8;
+  background: #fff;
+  border-bottom: 5px solid #0071E3;
+}
+
+.chat_input_wrapper .open_emoji {
+  border: none;
+  font-size: 24px;
+  padding: 0 20px;
+  background: none;
+  cursor: pointer;
+}
+
+.chat_input_wrapper .open_emoji:hover i {
+  color: #999;
+}
+
+.chat_input_wrapper .true {
+  color: #0071E3;
+}
+
+.chat_input_wrapper .false {
+  color: #000;
+}
+
+.chat_input_wrapper form {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.chat_input_wrapper form em-emoji-picker {
+  position: absolute;
+  top: -400px;
+  left: 100px;
+}
+
+.chat_input_wrapper form input {
+  height: 50px;
+  border: none;
+}
+
+.chat_input_wrapper form input[type="text"] {
+  width: 100%;
+  padding: 0 20px;
+  border: 1px solid #E6E5E8;
+  border-radius: 8px 0px 0  8px;
+  background: #F2F2F2;
+}
+/*# sourceMappingURL=style.css.map */

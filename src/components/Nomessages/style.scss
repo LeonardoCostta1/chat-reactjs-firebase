@@ -1,0 +1,19 @@
+@import '../../variables/_variables';
+.nomessages_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    .initial_text{
+        font-weight: 700;
+        span{
+            color: $primary;
+        }
+    }
+    .intro-text{
+        font-size: 12px;
+        opacity: .6;
+    }
+}

@@ -1,0 +1,36 @@
+.menu_wrapper {
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #E6E5E8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu_wrapper .menu_wrapper {
+  width: calc(100% - 100px);
+  margin: 0 auto;
+}
+
+.menu_wrapper .menu_wrapper .logo {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: -1px;
+  font-family: "Poppins", sans-serif;
+}
+
+.menu_wrapper .menu_wrapper .logo i {
+  color: #c1e0ff;
+}
+
+.menu_wrapper .menu_wrapper .sair {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

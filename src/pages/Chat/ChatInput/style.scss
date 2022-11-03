@@ -1,0 +1,61 @@
+@import '../../../variables/_variables';
+.chat_input_wrapper {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: calc(100% - 1px);
+  position: relative;
+  border-top: 1px solid $borderColor;
+  border-right: 1px solid $borderColor;
+  background: $bg;
+  border-bottom: 5px solid $primary;
+  .open_emoji {
+    border: none;
+    font-size: 24px;
+    padding: 0 20px;
+    background: none;
+    cursor: pointer;
+    &:hover {
+      i {
+        color: #999;
+      }
+    }
+  }
+
+  .true {
+    color: $primary;
+  }
+
+  .false {
+    color: #000;
+  }
+
+  form {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    em-emoji-picker {
+      position: absolute;
+      top: -400px;
+      left:100px;
+    }
+    input {
+      height: 50px;
+      border: none;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 0 20px;
+      border: 1px solid $borderColor;
+      border-radius: 8px 0px 0  8px;
+      background: $bgb;
+    }
+
+  }
+}

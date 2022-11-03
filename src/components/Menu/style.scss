@@ -1,0 +1,27 @@
+@import "../../variables/_variables";
+.menu_wrapper {
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid $borderColor;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .menu_wrapper {
+    width: calc(100% - 100px);
+    margin: 0 auto;
+    .logo {
+      font-size: 1.7rem;
+      text-transform: capitalize;
+      font-weight: bold;
+      letter-spacing: -1px;
+      font-family: "Poppins", sans-serif;
+      i{
+        color: $secundary;
+      }
+    }
+
+    .sair{
+        cursor: pointer;
+    }
+  }
+}

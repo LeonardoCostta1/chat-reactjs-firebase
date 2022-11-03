@@ -1,0 +1,23 @@
+.lcButton {
+  width: 50px;
+  background: #0071E3;
+  color: #fff;
+  border: none;
+  height: 50px;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  padding: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,51 @@
+.chat_profile_wrapper {
+  width: 80px;
+  background: #fff;
+}
+
+.chat_profile_wrapper .user_container {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 30px;
+}
+
+.chat_profile_wrapper .user_container .photo {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  background: #F2F2F2;
+  margin-bottom: 10px;
+  position: relative;
+  border: 3px solid #F2F2F2;
+}
+
+.chat_profile_wrapper .user_container .photo img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.chat_profile_wrapper .user_container .displayName {
+  font-weight: 600;
+  display: none;
+}
+
+.chat_profile_wrapper .user_container .online_text {
+  color: #0071E3;
+  text-transform: uppercase;
+  font-size: 10px;
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

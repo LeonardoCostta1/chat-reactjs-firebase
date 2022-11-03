@@ -1,0 +1,20 @@
+@import'../../variables/_variables';
+.lcButton {
+    width: 50px;
+    background: $primary;
+    color: #fff;
+    border: none;
+    height: 50px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+  }
+  button{
+    border: none;
+    padding: 0;
+    &:focus{
+      outline: none;
+    }
+    &:active{
+      outline: none;
+    }
+  }
