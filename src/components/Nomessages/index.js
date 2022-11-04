@@ -5,6 +5,7 @@ import "./style.css";
 function Nomessages() {
   return (
     <div className="nomessages_wrapper">
+      <div className='logo'><i className="fa-solid fa-circle"></i> Studio</div>
       <div className="initial_text">
         - inicie uma conversa <span>agora !</span> -
       </div>

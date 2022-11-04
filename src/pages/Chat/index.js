@@ -15,7 +15,6 @@ import ChatInput from "./ChatInput";
 import "./style.css";
 import ChatUsers from "./ChatUsers";
 import ChatProfile from "./ChatProfile";
-import Menu from "../../components/Menu";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import Nomessages from "../../components/Nomessages";
@@ -44,7 +43,7 @@ const Chat = () => {
 
   useEffect(() => {
     dispatch({ type: "USER_FETCH_REQUESTED" });
-  }, []);
+  },[dispatch]);
 
   return (
     <>

@@ -37,6 +37,7 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid $borderColor;
     input {
       height: 40px;
       width: 90%;

@@ -3,7 +3,7 @@ import {
   getAuth,
   signInWithPopup,
   GoogleAuthProvider,
-  createUserWithEmailAndPassword,
+  // createUserWithEmailAndPassword,
   signInWithEmailAndPassword
 } from "firebase/auth";
 import { doc, setDoc, getFirestore } from "firebase/firestore";
@@ -17,7 +17,7 @@ const Login = () => {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [display, setDisplay] = useState("");
+  // const [display, setDisplay] = useState("");
 
   const signInWithGoogle = () => {
     signInWithPopup(auth, provider)
@@ -36,30 +36,30 @@ const Login = () => {
       .catch((error) => {});
   };
 
-  const createAccountWithEmailSenha = (e) => {
-    e.preventDefault();
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
+  // const createAccountWithEmailSenha = (e) => {
+  //   e.preventDefault();
+  //   createUserWithEmailAndPassword(auth, email, password)
+  //     .then((userCredential) => {
+  //       // Signed in
+  //       const user = userCredential.user;
 
-        setDoc(doc(db, "users", user.uid), {
-          uid: user.uid,
-          email: user.email,
-          displayName: display,
-          photoURL: user.photoURL,
-          token: Math.floor(
-            Math.random() * (Math.floor(99) - Math.ceil(0)) + Math.ceil(0)
-          )
-        });
-        // ...
-      })
-      .catch((error) => {
-        // const errorCode = error.code;
-        // const errorMessage = error.message;
-        // ..
-      });
-  };
+  //       setDoc(doc(db, "users", user.uid), {
+  //         uid: user.uid,
+  //         email: user.email,
+  //         displayName: display,
+  //         photoURL: user.photoURL,
+  //         token: Math.floor(
+  //           Math.random() * (Math.floor(99) - Math.ceil(0)) + Math.ceil(0)
+  //         )
+  //       });
+  //       // ...
+  //     })
+  //     .catch((error) => {
+  //       // const errorCode = error.code;
+  //       // const errorMessage = error.message;
+  //       // ..
+  //     });
+  // };
 
 
 const signInWithEmailAndPAssword=(e)=>{

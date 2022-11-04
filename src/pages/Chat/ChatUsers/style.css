@@ -50,6 +50,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-bottom: 1px solid #E6E5E8;
 }
 
 .chat_user_wrapper .top_bar input {

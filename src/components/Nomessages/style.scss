@@ -6,6 +6,17 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
+
+    .logo {
+        font-size: 1.7rem;
+        text-transform: capitalize;
+        font-weight: bold;
+        letter-spacing: -1px;
+        font-family: "Poppins", sans-serif;
+        i{
+          color: $secundary;
+        }
+      }
     .initial_text{
         font-weight: 700;
         span{
